@@ -8,6 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BasicMathViewController : UIViewController
+@interface BasicMathViewController : UIViewController <UIPickerViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UILabel *notification;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *topNum;
+
+@property (weak, nonatomic) IBOutlet UILabel *botNum;
+
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
+
+-(int)getNum2;
+-(IBAction)next;
 
 @end
+
+NSMutableArray * data;

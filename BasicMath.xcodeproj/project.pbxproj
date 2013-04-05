@@ -18,6 +18,7 @@
 		538CE56A170DB01400ED6C27 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 538CE569170DB01400ED6C27 /* Default-568h@2x.png */; };
 		538CE56D170DB01400ED6C27 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 538CE56B170DB01400ED6C27 /* MainStoryboard.storyboard */; };
 		538CE570170DB01400ED6C27 /* BasicMathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 538CE56F170DB01400ED6C27 /* BasicMathViewController.m */; };
+		538CE578170DB19000ED6C27 /* BMNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 538CE577170DB19000ED6C27 /* BMNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		538CE56C170DB01400ED6C27 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		538CE56E170DB01400ED6C27 /* BasicMathViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicMathViewController.h; sourceTree = "<group>"; };
 		538CE56F170DB01400ED6C27 /* BasicMathViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicMathViewController.m; sourceTree = "<group>"; };
+		538CE576170DB19000ED6C27 /* BMNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMNumber.h; sourceTree = "<group>"; };
+		538CE577170DB19000ED6C27 /* BMNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMNumber.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				538CE56B170DB01400ED6C27 /* MainStoryboard.storyboard */,
 				538CE56E170DB01400ED6C27 /* BasicMathViewController.h */,
 				538CE56F170DB01400ED6C27 /* BasicMathViewController.m */,
+				538CE576170DB19000ED6C27 /* BMNumber.h */,
+				538CE577170DB19000ED6C27 /* BMNumber.m */,
 				538CE55A170DB01400ED6C27 /* Supporting Files */,
 			);
 			path = BasicMath;
@@ -177,6 +182,7 @@
 				538CE560170DB01400ED6C27 /* main.m in Sources */,
 				538CE564170DB01400ED6C27 /* BasicMathAppDelegate.m in Sources */,
 				538CE570170DB01400ED6C27 /* BasicMathViewController.m in Sources */,
+				538CE578170DB19000ED6C27 /* BMNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
