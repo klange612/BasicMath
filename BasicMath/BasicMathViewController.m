@@ -88,6 +88,9 @@
 - (IBAction)changeToSubtraction:(UIBarButtonItem *)sender
 {
     operationsLabel.text = [NSString stringWithFormat:@"-"];
+    if (self.botNumValue > self.topNumValue) {
+        self.getNum2;
+    }
 }
 
 -(void)imageNumbers
@@ -155,6 +158,7 @@
         if (self.answer == (self.topNumValue + self.botNumValue)) {
             notification.textColor = [UIColor greenColor];
             notification.text = @"Correct";
+            if (self.answer > 10)self.playCheers;
         } else {
             notification.textColor = [UIColor redColor];
             notification.text = @"Try again";
@@ -163,6 +167,7 @@
         if (self.answer == (self.topNumValue - self.botNumValue)) {
             notification.textColor = [UIColor greenColor];
             notification.text = @"Correct";
+            if (self.answer > 10)self.playCheers;
         } else {
             notification.textColor = [UIColor redColor];
             notification.text = @"Try again";
@@ -170,6 +175,14 @@
         
     }
 }
+
+-(void)playCheers
+{
+    SystemSoundID cheers;
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"KidsCheering" ofType:@"wav"]], &cheers);
+    AudioServicesPlaySystemSound(cheers);
+ }
+
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)thePickerView {
     
