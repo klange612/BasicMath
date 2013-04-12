@@ -51,7 +51,6 @@
     self.botNumValue = self.getNum2;
     topNum.text = [NSString stringWithFormat:@"%i", self.topNumValue];
     botNum.text = [NSString stringWithFormat:@"%i", self.botNumValue];
-    self.answer = 0;
     notification.text = @"";
     self.imageNumbers;
 }
