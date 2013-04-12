@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		533076251717A37B0071902D /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 533076231717A37B0071902D /* apple.png */; };
+		533076261717A37B0071902D /* grapes.png in Resources */ = {isa = PBXBuildFile; fileRef = 533076241717A37B0071902D /* grapes.png */; };
 		538CE554170DB01400ED6C27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538CE553170DB01400ED6C27 /* UIKit.framework */; };
 		538CE556170DB01400ED6C27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538CE555170DB01400ED6C27 /* Foundation.framework */; };
 		538CE558170DB01400ED6C27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538CE557170DB01400ED6C27 /* CoreGraphics.framework */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		533076231717A37B0071902D /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		533076241717A37B0071902D /* grapes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grapes.png; sourceTree = "<group>"; };
 		538CE550170DB01400ED6C27 /* BasicMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		538CE553170DB01400ED6C27 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		538CE555170DB01400ED6C27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -101,6 +105,8 @@
 		538CE55A170DB01400ED6C27 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				533076231717A37B0071902D /* apple.png */,
+				533076241717A37B0071902D /* grapes.png */,
 				538CE55B170DB01400ED6C27 /* BasicMath-Info.plist */,
 				538CE55C170DB01400ED6C27 /* InfoPlist.strings */,
 				538CE55F170DB01400ED6C27 /* main.m */,
@@ -169,6 +175,8 @@
 				538CE568170DB01400ED6C27 /* Default@2x.png in Resources */,
 				538CE56A170DB01400ED6C27 /* Default-568h@2x.png in Resources */,
 				538CE56D170DB01400ED6C27 /* MainStoryboard.storyboard in Resources */,
+				533076251717A37B0071902D /* apple.png in Resources */,
+				533076261717A37B0071902D /* grapes.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +313,7 @@
 				538CE575170DB01400ED6C27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
