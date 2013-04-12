@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -139,6 +139,20 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="JWH-QY-vqv"/>
                             <imageView userInteractionEnabled="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="Za4-7L-Z9i"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQ1-7u-gNt">
+                                <items>
+                                    <barButtonItem title="+" width="30" id="fFN-5d-0LU">
+                                        <connections>
+                                            <action selector="changeToAddition:" destination="2" id="GYV-Gt-GVD"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="-" width="30" id="O18-Lf-cRq">
+                                        <connections>
+                                            <action selector="changeToSubtraction:" destination="2" id="dgj-YU-IK9"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -168,6 +182,7 @@
                             <constraint firstItem="QZy-vq-mff" firstAttribute="top" secondItem="S98-Og-skD" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="MzE-YS-Ac0"/>
                             <constraint firstItem="R0u-Hu-8by" firstAttribute="top" secondItem="KbT-Gk-vqv" secondAttribute="top" type="default" id="NXC-AK-rhl"/>
                             <constraint firstItem="o1l-i4-rut" firstAttribute="leading" secondItem="pMv-lg-O5B" secondAttribute="leading" type="default" id="ObM-I1-gUV"/>
+                            <constraint firstItem="cQ1-7u-gNt" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="OcT-tC-J1D"/>
                             <constraint firstItem="FYs-gb-Epz" firstAttribute="trailing" secondItem="WxT-RT-Brq" secondAttribute="trailing" type="default" id="P1w-xP-kYQ"/>
                             <constraint firstItem="R0u-Hu-8by" firstAttribute="leading" secondItem="hDI-om-2PR" secondAttribute="leading" type="default" id="PZn-NC-RVF"/>
                             <constraint firstItem="Za4-7L-Z9i" firstAttribute="top" secondItem="EF6-sO-buD" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Pej-Wt-rRc"/>
@@ -178,6 +193,7 @@
                             <constraint firstItem="o1l-i4-rut" firstAttribute="top" secondItem="Qze-oi-FT5" secondAttribute="top" type="default" id="TSk-Xd-kW4"/>
                             <constraint firstItem="WxT-RT-Brq" firstAttribute="trailing" secondItem="Rj1-2y-8Nc" secondAttribute="trailing" type="default" id="TjP-6z-jcq"/>
                             <constraint firstItem="MK1-CJ-6JR" firstAttribute="top" secondItem="pMv-lg-O5B" secondAttribute="top" type="default" id="U9t-sT-7qU"/>
+                            <constraint firstItem="cQ1-7u-gNt" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="VMC-Iq-1KV"/>
                             <constraint firstItem="FYs-gb-Epz" firstAttribute="top" secondItem="WxT-RT-Brq" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Vc3-8o-0Sd"/>
                             <constraint firstItem="rdX-yk-Gyd" firstAttribute="top" secondItem="R0u-Hu-8by" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="WJX-Y1-hk3"/>
                             <constraint firstItem="rdX-yk-Gyd" firstAttribute="leading" secondItem="o1l-i4-rut" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="WeM-mu-vqT"/>
@@ -207,6 +223,7 @@
                             <constraint firstItem="Rj1-2y-8Nc" firstAttribute="trailing" secondItem="IFl-5Y-Bhe" secondAttribute="trailing" type="default" id="fO8-ii-jZl"/>
                             <constraint firstItem="o1l-i4-rut" firstAttribute="leading" secondItem="KbT-Gk-vqv" secondAttribute="leading" type="default" id="fm2-iA-g0h"/>
                             <constraint firstItem="Za4-7L-Z9i" firstAttribute="trailing" secondItem="EF6-sO-buD" secondAttribute="trailing" type="default" id="h28-tu-aOq"/>
+                            <constraint firstItem="cQ1-7u-gNt" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="heJ-0X-nWq"/>
                             <constraint firstItem="y7J-Os-6z8" firstAttribute="leading" secondItem="sAQ-Et-pde" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="iCX-ir-0fB"/>
                             <constraint firstItem="JWH-QY-vqv" firstAttribute="top" secondItem="MK1-CJ-6JR" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="in3-C1-Wxg"/>
                             <constraint firstItem="WxT-RT-Brq" firstAttribute="leading" secondItem="Rj1-2y-8Nc" secondAttribute="leading" type="default" id="jji-TH-O43"/>
@@ -246,6 +263,7 @@
                         <outlet property="imageView8" destination="R0u-Hu-8by" id="gxT-ra-pch"/>
                         <outlet property="imageView9" destination="WxT-RT-Brq" id="OZq-wt-AbV"/>
                         <outlet property="notification" destination="S98-Og-skD" id="dxn-vG-pZp"/>
+                        <outlet property="operationsLabel" destination="8I0-s3-WUT" id="Rye-lK-HT7"/>
                         <outlet property="pickerView" destination="sAQ-Et-pde" id="pB3-9R-DyO"/>
                         <outlet property="topNum" destination="QZy-vq-mff" id="aDj-Uv-yLj"/>
                     </connections>

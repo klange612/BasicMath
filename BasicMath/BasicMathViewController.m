@@ -15,6 +15,7 @@
 @property (nonatomic) int topNumValue;
 @property (nonatomic) int botNumValue;
 @property (nonatomic) int answer;
+@property (nonatomic, weak) id operationCurrentState;
 
 @end
 
@@ -43,16 +44,50 @@
 @synthesize imageView16;
 @synthesize imageView17;
 @synthesize imageView18;
+@synthesize operationsLabel;
+@synthesize operationCurrentState;
+
 
 - (IBAction)next
 {
     self.clearImageNumbers;
-    self.topNumValue = self.getNum2;
-    self.botNumValue = self.getNum2;
+//    if (operationCurrentState == nil) [NSString operationCurrentState stringWithFormat:@"+"];
+    notification.text = @"";
+    self.getNum2;
+    self.imageNumbers;
+}
+
+-(int)getNum2
+{
+    operationCurrentState = operationsLabel.text;
+    
+    if ([operationCurrentState isEqualToString:@"-"]) {
+        self.topNumValue = (arc4random() % 9)+1;
+        self.botNumValue = (arc4random() % 9)+1;
+        while (self.botNumValue > self.topNumValue) {
+            self.topNumValue = (arc4random() % 9)+1;
+            self.botNumValue = (arc4random() % 9)+1;
+        }
+    } else {
+        self.topNumValue = (arc4random() % 9)+1;
+        self.botNumValue = (arc4random() % 9)+1;        
+    }
     topNum.text = [NSString stringWithFormat:@"%i", self.topNumValue];
     botNum.text = [NSString stringWithFormat:@"%i", self.botNumValue];
-    notification.text = @"";
-    self.imageNumbers;
+    
+    return 1;
+}
+
+
+- (IBAction)changeToAddition:(UIBarButtonItem *)sender
+{
+    operationsLabel.text = [NSString stringWithFormat:@"+"];
+}
+
+
+- (IBAction)changeToSubtraction:(UIBarButtonItem *)sender
+{
+    operationsLabel.text = [NSString stringWithFormat:@"-"];
 }
 
 -(void)imageNumbers
@@ -113,21 +148,27 @@
 
 - (IBAction)checkAnswer
 {
-//    int toCheck = [self.answer.stringValue intValue];
+    operationCurrentState = operationsLabel.text;
     NSLog(@"self.answer = %i", self.answer);
-    if (self.answer == (self.topNumValue + self.botNumValue)) {
-        notification.textColor = [UIColor greenColor];
-        notification.text = @"Correct";
-    } else {
-        notification.textColor = [UIColor redColor];
-        notification.text = @"Try again";
+    
+    if ([operationCurrentState isEqualToString:@"+"]) {
+        if (self.answer == (self.topNumValue + self.botNumValue)) {
+            notification.textColor = [UIColor greenColor];
+            notification.text = @"Correct";
+        } else {
+            notification.textColor = [UIColor redColor];
+            notification.text = @"Try again";
+        }
+    } else if ([operationCurrentState isEqualToString:@"-"]) {
+        if (self.answer == (self.topNumValue - self.botNumValue)) {
+            notification.textColor = [UIColor greenColor];
+            notification.text = @"Correct";
+        } else {
+            notification.textColor = [UIColor redColor];
+            notification.text = @"Try again";
+        }
+        
     }
-}
-
--(int)getNum2
-{
-    int ranNum = (arc4random() % 9)+1;
-    return ranNum;
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)thePickerView {

@@ -49,7 +49,7 @@
 
 
 
-
+@property (weak, nonatomic) IBOutlet UILabel *operationsLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *notification;
 
