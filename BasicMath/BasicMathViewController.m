@@ -47,14 +47,18 @@
 @synthesize operationsLabel;
 @synthesize operationCurrentState;
 
+-(void)setup
+{
+    [self next];
+}
 
 - (IBAction)next
 {
-    self.clearImageNumbers;
+    [self clearImageNumbers];
 //    if (operationCurrentState == nil) [NSString operationCurrentState stringWithFormat:@"+"];
     notification.text = @"";
-    self.getNum2;
-    self.imageNumbers;
+    [self getNum2];
+    [self imageNumbers];
 }
 
 -(int)getNum2
@@ -89,7 +93,7 @@
 {
     operationsLabel.text = [NSString stringWithFormat:@"-"];
     if (self.botNumValue > self.topNumValue) {
-        self.getNum2;
+        [self getNum2];
     }
 }
 
@@ -149,6 +153,11 @@
 
 }
 
+-(void)delayToNext
+{
+    [self performSelector:@selector(next) withObject:self afterDelay:4.0 ];
+}
+
 - (IBAction)checkAnswer
 {
     operationCurrentState = operationsLabel.text;
@@ -158,19 +167,25 @@
         if (self.answer == (self.topNumValue + self.botNumValue)) {
             notification.textColor = [UIColor greenColor];
             notification.text = @"Correct";
-            if (self.answer > 10)self.playCheers;
+            if (self.answer >= 0) [self playCheers];
+            [self delayToNext];
+
         } else {
             notification.textColor = [UIColor redColor];
             notification.text = @"Try again";
+            [self delayToNext];
         }
     } else if ([operationCurrentState isEqualToString:@"-"]) {
         if (self.answer == (self.topNumValue - self.botNumValue)) {
             notification.textColor = [UIColor greenColor];
             notification.text = @"Correct";
-            if (self.answer > 10)self.playCheers;
+            if (self.answer >= 0) [self playCheers];
+            [self delayToNext];
+
         } else {
             notification.textColor = [UIColor redColor];
             notification.text = @"Try again";
+            [self delayToNext];
         }
         
     }
@@ -208,7 +223,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.next;
+    [self next];
     data=[[NSMutableArray alloc] init];
     for (int i=0; i<20; i++) {
         [data addObject:[NSString stringWithFormat:@"%d", i]];

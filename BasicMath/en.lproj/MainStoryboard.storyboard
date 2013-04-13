@@ -141,12 +141,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="Za4-7L-Z9i"/>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQ1-7u-gNt">
                                 <items>
-                                    <barButtonItem title="+" width="30" id="fFN-5d-0LU">
+                                    <barButtonItem title="+" width="40" id="fFN-5d-0LU">
                                         <connections>
                                             <action selector="changeToAddition:" destination="2" id="GYV-Gt-GVD"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="-" width="30" id="O18-Lf-cRq">
+                                    <barButtonItem title="-" width="40" id="O18-Lf-cRq">
                                         <connections>
                                             <action selector="changeToSubtraction:" destination="2" id="dgj-YU-IK9"/>
                                         </connections>
