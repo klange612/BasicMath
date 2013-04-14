@@ -21,6 +21,7 @@
 		538CE56D170DB01400ED6C27 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 538CE56B170DB01400ED6C27 /* MainStoryboard.storyboard */; };
 		538CE570170DB01400ED6C27 /* BasicMathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 538CE56F170DB01400ED6C27 /* BasicMathViewController.m */; };
 		538CE578170DB19000ED6C27 /* BMNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 538CE577170DB19000ED6C27 /* BMNumber.m */; };
+		823F7DBA171A36CC007C5248 /* MultiMVCSegue.png in Resources */ = {isa = PBXBuildFile; fileRef = 823F7DB9171A36CC007C5248 /* MultiMVCSegue.png */; };
 		827B0DD9171896980055DA77 /* KidsCheering.wav in Resources */ = {isa = PBXBuildFile; fileRef = 827B0DD8171896980055DA77 /* KidsCheering.wav */; };
 		827B0DDD1718A05B0055DA77 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 827B0DDC1718A05B0055DA77 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
@@ -46,6 +47,7 @@
 		538CE56F170DB01400ED6C27 /* BasicMathViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicMathViewController.m; sourceTree = "<group>"; };
 		538CE576170DB19000ED6C27 /* BMNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMNumber.h; sourceTree = "<group>"; };
 		538CE577170DB19000ED6C27 /* BMNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMNumber.m; sourceTree = "<group>"; };
+		823F7DB9171A36CC007C5248 /* MultiMVCSegue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiMVCSegue.png; sourceTree = "<group>"; };
 		827B0DD8171896980055DA77 /* KidsCheering.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = KidsCheering.wav; sourceTree = "<group>"; };
 		827B0DDC1718A05B0055DA77 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -68,6 +70,7 @@
 		538CE547170DB01400ED6C27 = {
 			isa = PBXGroup;
 			children = (
+				823F7DBB171A388F007C5248 /* Resources */,
 				538CE552170DB01400ED6C27 /* Frameworks */,
 				538CE559170DB01400ED6C27 /* BasicMath */,
 				538CE551170DB01400ED6C27 /* Products */,
@@ -123,6 +126,14 @@
 				538CE569170DB01400ED6C27 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		823F7DBB171A388F007C5248 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				823F7DB9171A36CC007C5248 /* MultiMVCSegue.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +196,7 @@
 				533076251717A37B0071902D /* apple.png in Resources */,
 				533076261717A37B0071902D /* grapes.png in Resources */,
 				827B0DD9171896980055DA77 /* KidsCheering.wav in Resources */,
+				823F7DBA171A36CC007C5248 /* MultiMVCSegue.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
