@@ -104,7 +104,7 @@
     NSLog(@"x = %i", x);
     NSLog(@"y = %i", y);
     
-    UIImage *image1 = [UIImage imageNamed:@"apple.png"];
+    UIImage *image1 = [UIImage imageNamed:@"apple2.png"];
     UIImage *image2 = [UIImage imageNamed:@"grapes.png"];
     
     if (x >= 1) imageView1.image = image1;
@@ -173,7 +173,6 @@
         } else {
             notification.textColor = [UIColor redColor];
             notification.text = @"Try again";
-            [self delayToNext];
         }
     } else if ([operationCurrentState isEqualToString:@"-"]) {
         if (self.answer == (self.topNumValue - self.botNumValue)) {
@@ -185,7 +184,6 @@
         } else {
             notification.textColor = [UIColor redColor];
             notification.text = @"Try again";
-            [self delayToNext];
         }
         
     }
@@ -214,7 +212,7 @@
 }
 
 - (void)pickerView:(UIPickerView *)thePickerView  didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
-    notification.textColor = [UIColor blueColor];
+    notification.textColor = [UIColor whiteColor];
     notification.text = [NSString stringWithFormat:@"%@", [data objectAtIndex:row]];
     NSLog(@"Value: %@. Index of selected color: %i", [data objectAtIndex:row], row);
     self.answer = [[data objectAtIndex:row] intValue];
@@ -223,6 +221,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"Green-blackboard-Back-to-school_640x960.jpg"]]];
     [self next];
     data=[[NSMutableArray alloc] init];
     for (int i=0; i<20; i++) {

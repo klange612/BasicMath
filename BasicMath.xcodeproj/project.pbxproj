@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		533076251717A37B0071902D /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 533076231717A37B0071902D /* apple.png */; };
-		533076261717A37B0071902D /* grapes.png in Resources */ = {isa = PBXBuildFile; fileRef = 533076241717A37B0071902D /* grapes.png */; };
 		538CE554170DB01400ED6C27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538CE553170DB01400ED6C27 /* UIKit.framework */; };
 		538CE556170DB01400ED6C27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538CE555170DB01400ED6C27 /* Foundation.framework */; };
 		538CE558170DB01400ED6C27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538CE557170DB01400ED6C27 /* CoreGraphics.framework */; };
@@ -22,13 +20,19 @@
 		538CE570170DB01400ED6C27 /* BasicMathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 538CE56F170DB01400ED6C27 /* BasicMathViewController.m */; };
 		538CE578170DB19000ED6C27 /* BMNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 538CE577170DB19000ED6C27 /* BMNumber.m */; };
 		823F7DBA171A36CC007C5248 /* MultiMVCSegue.png in Resources */ = {isa = PBXBuildFile; fileRef = 823F7DB9171A36CC007C5248 /* MultiMVCSegue.png */; };
+		823F7DBE171B3838007C5248 /* Green-blackboard-Back-to-school_640x960.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 823F7DBC171B3838007C5248 /* Green-blackboard-Back-to-school_640x960.jpg */; };
+		823F7DBF171B3838007C5248 /* Green-blackboard-Back-to-school_1136x640.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 823F7DBD171B3838007C5248 /* Green-blackboard-Back-to-school_1136x640.jpg */; };
+		823F7DC1171B3DAB007C5248 /* icon-mvc-57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 823F7DC0171B3DAB007C5248 /* icon-mvc-57x57.png */; };
+		823F7DC3171B3DCB007C5248 /* icon-mvc-57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 823F7DC2171B3DCB007C5248 /* icon-mvc-57x57.png */; };
+		823F7DC5171B4070007C5248 /* apple2.png in Resources */ = {isa = PBXBuildFile; fileRef = 823F7DC4171B4070007C5248 /* apple2.png */; };
+		823F7DC7171B4083007C5248 /* icon-mvc-57x57-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 823F7DC6171B4083007C5248 /* icon-mvc-57x57-2.png */; };
+		823F7DCB171B4183007C5248 /* grapes.png in Resources */ = {isa = PBXBuildFile; fileRef = 823F7DCA171B4183007C5248 /* grapes.png */; };
+		823F7DCD171B892D007C5248 /* greenCheckmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 823F7DCC171B892D007C5248 /* greenCheckmark.png */; };
 		827B0DD9171896980055DA77 /* KidsCheering.wav in Resources */ = {isa = PBXBuildFile; fileRef = 827B0DD8171896980055DA77 /* KidsCheering.wav */; };
 		827B0DDD1718A05B0055DA77 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 827B0DDC1718A05B0055DA77 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		533076231717A37B0071902D /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
-		533076241717A37B0071902D /* grapes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grapes.png; sourceTree = "<group>"; };
 		538CE550170DB01400ED6C27 /* BasicMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		538CE553170DB01400ED6C27 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		538CE555170DB01400ED6C27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,6 +52,14 @@
 		538CE576170DB19000ED6C27 /* BMNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMNumber.h; sourceTree = "<group>"; };
 		538CE577170DB19000ED6C27 /* BMNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMNumber.m; sourceTree = "<group>"; };
 		823F7DB9171A36CC007C5248 /* MultiMVCSegue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiMVCSegue.png; sourceTree = "<group>"; };
+		823F7DBC171B3838007C5248 /* Green-blackboard-Back-to-school_640x960.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Green-blackboard-Back-to-school_640x960.jpg"; sourceTree = "<group>"; };
+		823F7DBD171B3838007C5248 /* Green-blackboard-Back-to-school_1136x640.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Green-blackboard-Back-to-school_1136x640.jpg"; sourceTree = "<group>"; };
+		823F7DC0171B3DAB007C5248 /* icon-mvc-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-mvc-57x57.png"; sourceTree = "<group>"; };
+		823F7DC2171B3DCB007C5248 /* icon-mvc-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-mvc-57x57.png"; path = "../icon-mvc-57x57.png"; sourceTree = "<group>"; };
+		823F7DC4171B4070007C5248 /* apple2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = apple2.png; path = ../apple2.png; sourceTree = "<group>"; };
+		823F7DC6171B4083007C5248 /* icon-mvc-57x57-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-mvc-57x57-2.png"; path = "../icon-mvc-57x57-2.png"; sourceTree = "<group>"; };
+		823F7DCA171B4183007C5248 /* grapes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grapes.png; sourceTree = "<group>"; };
+		823F7DCC171B892D007C5248 /* greenCheckmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenCheckmark.png; sourceTree = "<group>"; };
 		827B0DD8171896980055DA77 /* KidsCheering.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = KidsCheering.wav; sourceTree = "<group>"; };
 		827B0DDC1718A05B0055DA77 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -114,8 +126,14 @@
 		538CE55A170DB01400ED6C27 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				533076231717A37B0071902D /* apple.png */,
-				533076241717A37B0071902D /* grapes.png */,
+				823F7DCA171B4183007C5248 /* grapes.png */,
+				823F7DC2171B3DCB007C5248 /* icon-mvc-57x57.png */,
+				823F7DC6171B4083007C5248 /* icon-mvc-57x57-2.png */,
+				823F7DC4171B4070007C5248 /* apple2.png */,
+				823F7DC0171B3DAB007C5248 /* icon-mvc-57x57.png */,
+				823F7DCC171B892D007C5248 /* greenCheckmark.png */,
+				823F7DBC171B3838007C5248 /* Green-blackboard-Back-to-school_640x960.jpg */,
+				823F7DBD171B3838007C5248 /* Green-blackboard-Back-to-school_1136x640.jpg */,
 				827B0DD8171896980055DA77 /* KidsCheering.wav */,
 				538CE55B170DB01400ED6C27 /* BasicMath-Info.plist */,
 				538CE55C170DB01400ED6C27 /* InfoPlist.strings */,
@@ -193,10 +211,16 @@
 				538CE568170DB01400ED6C27 /* Default@2x.png in Resources */,
 				538CE56A170DB01400ED6C27 /* Default-568h@2x.png in Resources */,
 				538CE56D170DB01400ED6C27 /* MainStoryboard.storyboard in Resources */,
-				533076251717A37B0071902D /* apple.png in Resources */,
-				533076261717A37B0071902D /* grapes.png in Resources */,
 				827B0DD9171896980055DA77 /* KidsCheering.wav in Resources */,
 				823F7DBA171A36CC007C5248 /* MultiMVCSegue.png in Resources */,
+				823F7DBE171B3838007C5248 /* Green-blackboard-Back-to-school_640x960.jpg in Resources */,
+				823F7DBF171B3838007C5248 /* Green-blackboard-Back-to-school_1136x640.jpg in Resources */,
+				823F7DC1171B3DAB007C5248 /* icon-mvc-57x57.png in Resources */,
+				823F7DC3171B3DCB007C5248 /* icon-mvc-57x57.png in Resources */,
+				823F7DC5171B4070007C5248 /* apple2.png in Resources */,
+				823F7DC7171B4083007C5248 /* icon-mvc-57x57-2.png in Resources */,
+				823F7DCB171B4183007C5248 /* grapes.png in Resources */,
+				823F7DCD171B892D007C5248 /* greenCheckmark.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
